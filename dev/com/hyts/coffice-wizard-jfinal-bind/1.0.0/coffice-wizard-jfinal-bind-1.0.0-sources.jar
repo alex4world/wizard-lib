@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>页面已拦截</title>
+  
+  <link href="/static/warning/styles/init.css" rel="stylesheet" type="text/css">
+  <link href="/static/warning/styles/intercept.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="title">
+  <img src="/static/warning/images/title.png" alt="PRC' emblem">
+  <p>南京市公安局提示您:</p>
+</div>
+
+<div class="content" align="center">
+  <div class="adjustPosition" align="center">
+    <div class="warn">
+      <img src="/static/warning/images/interceptWarn.png">
+      <div class="detail">
+        <p>已有大量用户举报该链接下载的文件存在病毒木马，下载并运行可能会损坏您的电脑系统或者盗取您的帐号信息。</p>
+        <a href=/complain/report/?ac=320100&amp;url=http%3A%2F%2F101.96.10.44%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fhyts%2Fcoffice-wizard-jfinal-bind%2F1.0.0%2Fcoffice-wizard-jfinal-bind-1.0.0-sources.jar&amp;unet=0&amp;pa=warning&amp;sc=320100X3844084387PHDGBITAVPASST&amp;et=524288&amp;ar=consult&amp;id=3201001723420181108200326831658>我要申诉</a>
+      </div>
+    </div>
+
+    <div class="btn">
+      <div class="recommend">
+        <p><a href=/warning/collection/?ac=320100&amp;url=http%3A%2F%2F101.96.10.44%2Frepo1.maven.org%2Fmaven2%2Fcom%2Fhyts%2Fcoffice-wizard-jfinal-bind%2F1.0.0%2Fcoffice-wizard-jfinal-bind-1.0.0-sources.jar&amp;unet=0&amp;pa=warning&amp;sc=320100X3844084387PHDGBITAVPASST&amp;et=524288&amp;ar=stop&amp;id=3201001723420181108200326831658>关闭页面</a></p>
+      </div>
+
+      <div class="notRecommend">
+        <p id="onGotoUrl"><a href="javascript:void(0)" onclick="onGotoUrl()">继续访问(不推荐)</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="announcement" align="center">
+    <div class="video-title">
+      <p>南京公安与民众携手反电诈，共同护安全</p>
+    </div>
+    <div class="video">
+      <iframe frameborder="0" width="466" height="263" allow="autoplay; fullscreen" allowfullscreen="true" src="//v.qq.com/txp/iframe/player.html?origin=https%3A%2F%2Fmp.weixin.qq.com&amp;vid=s1348k9lfnv&amp;autoplay=false&amp;full=true&amp;show1080p=false&amp;isDebugIframe=false"></iframe>
+    </div>
+    <div class="qrcode">
+      <div class="wechat-title">
+        <p>南京公安与民众携手反电诈，共同护安全</p>
+      </div>
+
+      <div class="wechat">
+        <p>南京防诈骗官方公众号</p>
+        <img onclick="showQRCode()" src="/static/warning/images/wechat.png" />
+      </div>
+
+      <div class="infomation">
+        <img src="/static/warning/images/infoIcon.png" />
+        <p>诈骗和反诈骗相关新闻资讯</p>
+      </div>
+
+      <div class="qrpic" align="center">
+        <img src="/static/warning/images/qrcode.png" />
+        <p>南京防诈骗官方公众号</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="qrcode-big" onclick="hideQRCode()">
+  <img src="/static/warning/images/qrcode-large.png" />
+</div>
+<div class="footer">
+  <div class="support">
+    <p align="center">
+    
+        南京公安研究院、南京市公安局通讯网络诈骗案件查控中心技术支持</p>
+    
+  </div>
+</div>
+
+
+<div style="display:none">
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261355923'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261355923' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+
+
+<script src="/static/warning/js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+function onGotoUrl(){
+  data = {
+    ac: '320100',
+    et: '524288',
+    pa: 'warning',
+    sc: '320100X3844084387PHDGBITAVPASST',
+    url: 'http://101.96.10.44/repo1.maven.org/maven2/com/hyts/coffice-wizard-jfinal-bind/1.0.0/coffice-wizard-jfinal-bind-1.0.0-sources.jar',
+    id: '3201001723420181108200326831658',
+    ar: 'go'
+  };
+  $.ajax({
+    type: 'GET',
+    url: '/warning/collection/',
+    data: data,
+  });
+  window.location.href = 'http://101.96.10.44/repo1.maven.org/maven2/com/hyts/coffice-wizard-jfinal-bind/1.0.0/coffice-wizard-jfinal-bind-1.0.0-sources.jar?320100X3844084387PHDGBITAVPASST';
+}
+
+function loadBigQRCodePic(){
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  console.log(w);
+  console.log(h);
+  bigQR = document.getElementById("qrcode-big");
+  console.log(bigQR);
+  bigQR.style.minWidth = w;
+  bigQR.style.minHeight = h;
+}
+
+function showQRCode(){
+  loadBigQRCodePic()
+  $("#qrcode-big").show();
+}
+
+function hideQRCode(){
+  $("#qrcode-big").hide();
+}
+</script>
+</body>
+</html>

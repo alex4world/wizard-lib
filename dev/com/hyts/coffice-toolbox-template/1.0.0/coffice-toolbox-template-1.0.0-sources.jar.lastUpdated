@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 08 20:03:09 CST 2018
+http\://116.62.102.125\:8081/repository/maven-public/.error=
+http\://116.62.102.125\:8081/repository/maven-public/.lastUpdated=1539400281384
+http\://repo1.maven.org/maven2/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1539400281662
+http\://repo1.maven.org/maven2/.lastUpdated=1540556275084
+http\://edas-public.oss-cn-hangzhou.aliyuncs.com/repository/.error=
+http\://edas-public.oss-cn-hangzhou.aliyuncs.com/repository/.lastUpdated=1541678589705
+https\://repo.maven.apache.org/maven2/.error=
