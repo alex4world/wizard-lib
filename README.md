@@ -1,4 +1,4 @@
-# maven2
+# wizard-lib
 the repository is mainly to support the maven2 mirror jar library info
 use the github repository to maintaince the maven2 library , that as to the a mirror help us
 
@@ -7,11 +7,7 @@ use the github repository to maintaince the maven2 library , that as to the a mi
 <repositories>
     <repository>
         <id>alex-repository</id>
-<<<<<<< HEAD
-        <url>https://raw.githubusercontent.com/alex-repository/maven2/master/dev/</url>
-=======
-        <url>https://raw.githubusercontent.com/alex4world/maven2/master/develop/</url>
->>>>>>> 1457b408fd3e1b9b54a44d9ff653cc7202478c71
+        <url>https://raw.githubusercontent.com/alex4world/wizard-lib/master/develop/</url>
     </repository>
 </repositories>
 
@@ -23,11 +19,7 @@ use the github repository to maintaince the maven2 library , that as to the a mi
   <mirror>  
    <id>alex.repository.github</id>  
    <name>alex-repository</name>  
-<<<<<<< HEAD
-   <url>https://raw.githubusercontent.com/alex-repository/maven2/master/dev/</url>  
-=======
-   <url>https://raw.githubusercontent.com/alex4world/maven2/master/develop/</url>  
->>>>>>> 1457b408fd3e1b9b54a44d9ff653cc7202478c71
+   <url>https://raw.githubusercontent.com/alex4world/wizard-lib/master/develop/</url>  
    <mirrorOf>central</mirrorOf>  
   </mirror>
 </mirrors>  
