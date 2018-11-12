@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hyts</groupId>
+		<artifactId>coffice-wizard</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<groupId>com.hyts.embedd</groupId>
+	<artifactId>coffice-wizard-embedd</artifactId>
+	<packaging>pom</packaging>
+	<name>com.hyts.embedd</name>
+	<description>embedd some middleware or server </description>
+	<modules>
+		<module>coffice-wizard-embedd-jetty</module>
+	</modules>
+	<properties>
+		<jetty.aggregate.version>9.0.0.v20130308</jetty.aggregate.version>
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+		<jetty-jsp.version>9.0.0.v20130308</jetty-jsp.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.eclipse.jetty.aggregate</groupId>
+				<artifactId>jetty-all</artifactId>
+				<version>${jetty.aggregate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-jsp</artifactId>
+				<version>${jetty-jsp.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
